@@ -1,0 +1,15 @@
+{
+	"name": "ToDo",
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"description": "Расширение для просмотра и добавление заметок",
+	"action": {
+		"default_popup": "index.html",
+		"default_icon": "/img/todo.png"
+	},
+	"icons": {
+		"32": "/img/todo.png",
+		"64": "/img/todo.png",
+		"128": "/img/todo.png"
+	}
+}
