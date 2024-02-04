@@ -11,5 +11,6 @@
 		"32": "/img/todo.png",
 		"64": "/img/todo.png",
 		"128": "/img/todo.png"
-	}
+	},
+	"permissions": ["storage"]
 }

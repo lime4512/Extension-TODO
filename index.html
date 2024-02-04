@@ -2,10 +2,24 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style/reset.css" />
+		<link rel="stylesheet" href="/style/style.css" />
 		<title>Todo</title>
 	</head>
 	<body>
-		<h1>ToDo</h1>
+		<section class="content">
+			<h1>Заметки</h1>
+			<input type="text" class="input" id="input" placeholder="Текст заметки" />
+			<button class="submit" id="btn">Добавить</button>
+			<ul class="list" id="list"></ul>
+		</section>
+		<script src="/script/script.js"></script>
 	</body>
 </html>
