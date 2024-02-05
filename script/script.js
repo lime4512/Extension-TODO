@@ -7,13 +7,17 @@ function render() {
 	const note = JSON.parse(localStorage.getItem('note')) || []
 
 	note.map(item => {
-		list.insertAdjacentHTML(
-			'beforeend',
-			`<li class='item-list'>
-      <input type="checkbox" class="checkbox-list"/>
-      <label class="text-list">${item.text}</label>
-    </li>`
-		)
+		const li = document.createElement('li')
+		li.textContent = item.text
+		const button = document.createElement('button')
+		button.textContent = 'Удалить'
+		button.addEventListener('click', function () {
+			note.splice(item, 1)
+			localStorage.setItem('note', JSON.stringify(note))
+			render()
+		})
+		li.appendChild(button)
+		list.appendChild(li)
 	})
 }
 render()
@@ -30,4 +34,8 @@ btn.onclick = () => {
 	}
 	input.value = ''
 	render()
+}
+
+function myFunction() {
+	console.log('sdfsdf')
 }
