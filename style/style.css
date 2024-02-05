@@ -32,12 +32,22 @@
 .item-list {
 	width: 280px;
 	display: flex;
-	gap: 5px;
-	overflow-wrap: break-word;
-
+	justify-content: space-between;
+	margin-bottom: 7px;
 	border-bottom: 1px solid rgb(27, 25, 25);
+}
+.item-list:last-child {
+	margin-bottom: 0;
 }
 
 .text-list {
+	width: 200px;
+	overflow-wrap: break-word;
 	color: rgb(59, 59, 59);
+}
+
+.complete {
+	width: 200px;
+	overflow-wrap: break-word;
+	color: rgb(21, 255, 0);
 }
